@@ -10,10 +10,14 @@ function telaHome(){
     input.placeholder = "Digite seu nome"
     button.id = "btnSubmit";
     button.innerText = "Entrar";
+    button.type= "submit";
+    
 
-    home.appendChild(h1);
+    form.action= "jogo.html";
     form.appendChild(input);
     form.appendChild(button);
+
+    home.appendChild(h1);
     home.appendChild(form);
     
     home.classList.add('form');
