@@ -1,0 +1,52 @@
+body{
+    background-image: url('../img/papel.jpg');
+    background-size: 100%;
+}
+.jogo{
+    width: 600px;
+    height: 600px;
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    border-radius: 50px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border: solid rgb(40, 93, 109);
+
+}
+.box{
+    
+    height: 250px;
+    width: 250px;
+
+}
+.red{
+    background-color: red;
+    border-radius: 100px 0 0 0;
+}
+.blue{
+    background-color: blue;
+    border-radius: 0 100px 0 0;
+}
+.green{
+    background-color: green;
+    border-radius: 0 0 0 100px;
+}
+.yellow{
+    background-color: yellow;
+    border-radius: 0 0 100px 0;
+}
+.infos{
+    top: 170px;
+    left: 170px;
+    position: absolute;
+    background-color: antiquewhite;
+    border-radius: 100px;
+    background-image: url('../img/backMario2.png');
+    background-size: 300px;
+    border: solid gray;
+}
