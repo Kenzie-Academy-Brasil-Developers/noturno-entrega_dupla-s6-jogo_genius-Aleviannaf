@@ -1,0 +1,51 @@
+body{
+    background-image: url("../assets/papel.jpg");
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.form{
+    width: 50vh;
+    height: 50vh;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 3px 2px 2px 1px;
+   opacity: 90%;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.form h1{
+    font-family: 'Palette Mosaic', cursive;
+    font-family: 'Smokum', cursive;
+    font-style: bold;
+    text-align: center;
+    font-size: 100px;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 110px;
+}
+
+.form form input{
+    text-align: center;
+    height: 40px;
+    width: 240px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.form form button{
+    text-align: center;
+    height: 40px;
+    width: 250px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
