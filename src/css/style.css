@@ -27,18 +27,29 @@ body{
 .red{
     background-color: red;
     border-radius: 100px 9px 9px 9px;
+    opacity: 0.9;
+    transition: 0.75s;
 }
 .blue{
     background-color: blue;
     border-radius: 9px 100px 9px 9px;
+    opacity: 0.9;
+    transition: 0.75s;
+
 }
 .green{
     background-color: green;
     border-radius: 9px 9px 9px 100px;
+    opacity: 0.9;
+    transition: 0.75s;
+
 }
 .yellow{
     background-color: yellow;
     border-radius: 9px 9px 100px 9px;
+    opacity: 0.9;
+    transition: 0.75s;
+
 }
 .infos{
     top: 170px;
@@ -49,4 +60,35 @@ body{
     background-image: url('../img/backMario2.png');
     background-size: 300px;
     border: solid gray;
+}
+
+/*Botões brilhando*/
+
+#red{
+    height: 265px;
+    width: 265px;
+    box-shadow: 0 0 20px 0;
+    transition: 0.75s;
+    opacity: 2;  
+}
+#blue{
+    height: 265px;
+    width: 265px;
+    box-shadow: 0 0 10px 0;  
+    transition: 0.75s;
+    opacity: 2;  
+}
+#green{
+    height: 265px;
+    width: 265px;
+    box-shadow: 0 0 10px 0;  
+    transition: 0.75s;
+    opacity: 2;  
+}
+#yellow{
+    height: 265px;
+    width: 265px;
+    box-shadow: 0 0 10px 0;  
+    transition: 0.75s;
+    opacity: 2;  
 }
