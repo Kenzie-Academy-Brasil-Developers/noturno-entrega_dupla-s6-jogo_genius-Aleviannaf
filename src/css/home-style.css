@@ -27,7 +27,7 @@ body{
     font-size: 100px;
 }
 
-.form form{
+.form .wrap{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -35,7 +35,7 @@ body{
     height: 110px;
 }
 
-.form form input{
+.form .wrap input{
     text-align: center;
     height: 40px;
     width: 240px;
@@ -43,7 +43,7 @@ body{
     border-radius: 10px;
 }
 
-.form form button{
+.form .wrap button{
     text-align: center;
     height: 40px;
     width: 250px;
