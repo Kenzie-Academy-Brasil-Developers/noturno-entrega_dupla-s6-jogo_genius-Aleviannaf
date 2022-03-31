@@ -7,7 +7,8 @@ function telaHome(){
     const form = document.createElement("form");
     
     h1.innerText = "Genius";
-    input.placeholder = "Digite seu nome"
+    input.placeholder = "Digite seu nome";
+    input.required = true;
     button.id = "btnSubmit";
     button.innerText = "Entrar";
     button.type= "submit";
