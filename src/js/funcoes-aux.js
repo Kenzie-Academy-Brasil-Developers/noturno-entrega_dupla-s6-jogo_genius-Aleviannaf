@@ -1,8 +1,11 @@
 
 //cria numero pra associar a cor
+const armazenaJogadaEmNumber = [];
+
 function corRandomica(){
     
-    return Math.trunc(Math.random() * 4) + 1;
+    armazenaJogadaEmNumber.push(Math.trunc(Math.random() * 4) + 1);
+    return armazenaJogadaEmNumber;
 }
 
 //função para limpar ambos os arrays.
