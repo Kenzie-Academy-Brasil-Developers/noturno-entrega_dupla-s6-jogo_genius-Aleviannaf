@@ -1,6 +1,7 @@
 body{
     background-image: url('../img/papel.jpg');
     background-size: 100%;
+    
 }
 .jogo{
     width: 600px;
@@ -16,7 +17,7 @@ body{
     margin-right: auto;
     margin-top: 100px;
     border: solid rgb(40, 93, 109);
-
+    cursor: pointer;
 }
 .box{
     
@@ -67,28 +68,44 @@ body{
 #red{
     height: 265px;
     width: 265px;
-    box-shadow: 0 0 20px 0;
+    box-shadow: white 0 0 20px 0;
     transition: 0.75s;
     opacity: 2;  
 }
 #blue{
     height: 265px;
     width: 265px;
-    box-shadow: 0 0 10px 0;  
+    box-shadow: white 0 0 20px 0;  
     transition: 0.75s;
     opacity: 2;  
 }
 #green{
     height: 265px;
     width: 265px;
-    box-shadow: 0 0 10px 0;  
+    box-shadow: white 0 0 20px 0;  
     transition: 0.75s;
     opacity: 2;  
 }
 #yellow{
     height: 265px;
     width: 265px;
-    box-shadow: 0 0 10px 0;  
+    box-shadow: white 0 0 20px 0;  
     transition: 0.75s;
     opacity: 2;  
+}
+
+/*BOTÃO DE START*/
+.infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.startNoGame{
+    font-family: 'Palette Mosaic', cursive;
+    font-family: 'Smokum', cursive;
+    font-style: bold;
+    font-size: 50px;
+}
+#esconderStart{
+    display: none;
 }

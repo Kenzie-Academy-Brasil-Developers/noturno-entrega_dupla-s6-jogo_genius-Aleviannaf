@@ -26,6 +26,13 @@ function criaTabuleiroDoJogo(){
     const boxInfos = document.createElement('div');
     boxInfos.setAttribute('class', 'box infos');
 
+    const spanComecarAJogar = document.createElement('span');
+    spanComecarAJogar.setAttribute('class','startNoGame');
+    spanComecarAJogar.setAttribute('id','');
+    spanComecarAJogar.innerText = `PRESS\nSTART`;
+
+    boxInfos.appendChild(spanComecarAJogar);
+
     main.appendChild(boxRed);
     main.appendChild(boxBlue);
     main.appendChild(boxGreen);
@@ -34,51 +41,3 @@ function criaTabuleiroDoJogo(){
 
 }
 criaTabuleiroDoJogo();
-
-//cria numero pra associar a cor
-function corRandomica(){
-    
-    return Math.trunc(Math.random() * 4) + 1;
-}
-
-//array para salvar as cores
-const coresSalvas = [];
-
-// Função que assosia numero a cor.
-function associandoNumACores(num){
-
-    const boxRed = document.querySelector('.red');
-    const boxBlue = document.querySelector('.blue');
-    const boxGreen = document.querySelector('.green');
-    const boxYellow = document.querySelector('.yellow');
-
-    if(num === 1){
-        boxRed.id = 'red';
-
-        coresSalvas.push('red');
-
-    }else if(num === 2){
-        boxBlue.id = 'blue';
-
-        coresSalvas.push('blue');
-
-    }else if(num === 3){
-        boxGreen.id = 'green';
-
-        coresSalvas.push('green');
-                
-    }else if(num === 4){
-        boxYellow.id = 'yellow';
-
-        coresSalvas.push('yellow');
-    }
-
-    setTimeout(function(){
-        boxRed.id = '';
-        boxBlue.id = '';
-        boxGreen.id = '';
-        boxYellow.id = '';
-    },1000);
-    
-}
-associandoNumACores(corRandomica());
