@@ -126,4 +126,12 @@ body{
     text-align:center;
 }
 
+.mensagemIniciou{
+    font-family: 'Palette Mosaic', cursive;
+    font-family: 'Smokum', cursive;
+    font-style: bold;
+    font-size: 50px;
+    text-align:center;
+}
+
 
