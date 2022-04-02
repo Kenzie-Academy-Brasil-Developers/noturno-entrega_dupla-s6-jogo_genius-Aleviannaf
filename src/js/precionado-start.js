@@ -36,6 +36,7 @@ function clickStart(event) {
     const botaoStart = document.querySelector('.startNoGame');
     const click = event.target.classList[0];
 
+
     setTimeout(() => {
         if (click === 'startNoGame') {
             chamarFuncaoStart.removeChild(botaoStart);
@@ -47,6 +48,7 @@ function clickStart(event) {
     setTimeout(()=>{
         montarApresentacao();
     }, delay);
+
     
 }
 
