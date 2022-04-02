@@ -8,6 +8,8 @@ function iniciandoJogo() {
     spanInciando.classList.add('iniciandoJogo');
     spanInciando.innerText = "Inciando Jogo em \n 3 2 1 ..."
     chamarFuncaoStart.appendChild(spanInciando);
+    jogadaDaMaquina();
+
 }
 
 

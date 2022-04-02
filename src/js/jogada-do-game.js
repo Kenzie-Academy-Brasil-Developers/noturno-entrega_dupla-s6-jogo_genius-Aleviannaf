@@ -5,6 +5,9 @@ function jogadaDaMaquina(){
 
     let geraNumRandomArray = corRandomica();
     let chamandoFuncComParametro = sequenciaDeCores(geraNumRandomArray);
+
+    const botaoCorClicada = document.querySelector('.jogo');
+    botaoCorClicada.addEventListener('click',corClicada);
 }
 
 //função que acende as cores na jogada da maquina

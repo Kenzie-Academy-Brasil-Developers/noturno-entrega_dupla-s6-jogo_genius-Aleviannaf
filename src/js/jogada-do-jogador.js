@@ -56,5 +56,5 @@ function corClicada(event){
         luzesJogada(cor);
     }
 }
-const botaoCorClicada = document.querySelector('.jogo');
-botaoCorClicada.addEventListener('click',corClicada);
+//const botaoCorClicada = document.querySelector('.jogo');
+//botaoCorClicada.addEventListener('click',corClicada);
