@@ -1,7 +1,6 @@
 function pegarNome(){
-    const teste = document.getElementById('inputsubmit');
-    console.log(teste.value);
-    window.location.href='jogo.html';
+    const nome = document.getElementById('inputsubmit');
+    window.location.href=`jogo.html?${nome.value}`;
 }
 
 
