@@ -1,9 +1,6 @@
 
-//array para salvar as cores /jogo
-const coresSalvas = [];
-
 ////////////////////////////////
-// Função que assosia numero a cor.
+// Função principal que associa numero a cor e mostra a jogada da maquina em si.
 function jogadaDaMaquina(){
 
     let geraNumRandomArray = corRandomica();
@@ -21,22 +18,14 @@ function acendendoCoresMaquina(num){
         if(num === 1){
             boxRed.id = 'red';
 
-            coresSalvas.push('red');
-
         }else if(num === 2){
             boxBlue.id = 'blue';
 
-            coresSalvas.push('blue');
-
         }else if(num === 3){
             boxGreen.id = 'green';
-
-            coresSalvas.push('green');
                     
         }else if(num === 4){
             boxYellow.id = 'yellow';
-
-            coresSalvas.push('yellow');
         }
 
         setTimeout(function(){

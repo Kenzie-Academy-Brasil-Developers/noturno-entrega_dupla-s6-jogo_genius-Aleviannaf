@@ -8,6 +8,7 @@ function clickStart(event){
     if(click === 'startNoGame'){
         botaoStart.id = 'esconderStart';
     }
+    
 }
 const chamarFuncaoStart = document.querySelector('.infos');
 chamarFuncaoStart.addEventListener('click',clickStart);
