@@ -8,6 +8,8 @@ function jogadaDaMaquina(){
 
     const botaoCorClicada = document.querySelector('.jogo');
     botaoCorClicada.addEventListener('click',corClicada);
+
+    identificaFimDaSequenciaDoJogador();
 }
 
 //função que acende as cores na jogada da maquina
