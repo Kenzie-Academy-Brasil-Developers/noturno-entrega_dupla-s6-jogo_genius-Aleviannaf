@@ -7,39 +7,33 @@ const coresSalvas = [];
 function jogadaDaMaquina(){
 
     let geraNumRandomArray = corRandomica();
-    let chamandoFuncComParametro = associandoNumACores(geraNumRandomArray);
+    let chamandoFuncComParametro = sequenciaDeCores(geraNumRandomArray);
 }
-function associandoNumACores(num){    
+
+//função que acende as cores na jogada da maquina
+function acendendoCoresMaquina(num){    
 
     const boxRed = document.querySelector('.red');
     const boxBlue = document.querySelector('.blue');
     const boxGreen = document.querySelector('.green');
-    const boxYellow = document.querySelector('.yellow');    
-
-    for(let i = 0; i < num.length; i++){
-        
-        /*setTimeout(function(){
-            
-        },400)*/
-
-        let numF = num[i];      
-
-        if(numF === 1){
+    const boxYellow = document.querySelector('.yellow');
+    
+        if(num === 1){
             boxRed.id = 'red';
 
             coresSalvas.push('red');
 
-        }else if(numF === 2){
+        }else if(num === 2){
             boxBlue.id = 'blue';
 
             coresSalvas.push('blue');
 
-        }else if(numF === 3){
+        }else if(num === 3){
             boxGreen.id = 'green';
 
             coresSalvas.push('green');
                     
-        }else if(numF === 4){
+        }else if(num === 4){
             boxYellow.id = 'yellow';
 
             coresSalvas.push('yellow');
@@ -50,11 +44,23 @@ function associandoNumACores(num){
             boxBlue.id = '';
             boxGreen.id = '';
             boxYellow.id = '';
-        },600);
+        },600);  
+}
 
+//função que faz rodar todas as cores que estiverem no array na jogada da maquina
+function sequenciaDeCores(arr){
+    
+    let delay = 400;
+    
+    for(let i = 0; i < arr.length; i++){
 
+        let arrInF = arr[i];
 
+        setTimeout(function(){
+            
+            acendendoCoresMaquina(arrInF)
+        },delay); 
+        
+        delay += 800;        
     }
-    
-    
 }
