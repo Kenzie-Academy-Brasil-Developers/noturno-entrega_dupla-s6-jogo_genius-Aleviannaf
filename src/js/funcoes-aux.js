@@ -29,8 +29,11 @@ function comparaJogadas(arr1,arr2){
 
     if(stringArr1 === stringArr2){
         
-        jogadaDaMaquina();
-    }    
+        console.log("acertou");
+        mensagemDeAcerto();
+    }  else{
+        mensagemDeErro();
+    }
     limpaArray(jogadaSalva);
     limpaArray(jogoMaquina);
 }

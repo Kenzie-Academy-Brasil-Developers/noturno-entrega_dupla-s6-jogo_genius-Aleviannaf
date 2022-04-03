@@ -134,4 +134,19 @@ body{
     text-align:center;
 }
 
+.mensagemAcertou{
+    font-family: 'Palette Mosaic', cursive;
+    font-family: 'Smokum', cursive;
+    font-style: bold;
+    font-size: 50px;
+    text-align:center;
+}
+
+.mensagemScore{
+    font-family: 'Palette Mosaic', cursive;
+    font-family: 'Smokum', cursive;
+    font-style: bold;
+    font-size: 30px;
+    text-align:center;
+}
 
