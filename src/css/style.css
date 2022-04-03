@@ -97,6 +97,7 @@ body{
 /*BOTÃO DE START*/
 .infos{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -150,3 +151,16 @@ body{
     text-align:center;
 }
 
+/*Botão reiniciar*/
+button{
+    background-color: aqua;
+    font-family: 'Palette Mosaic', cursive;
+    font-family: 'Smokum', cursive;
+    font-style: bold;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
