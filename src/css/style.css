@@ -6,7 +6,7 @@ body{
 .jogo{
     width: 600px;
     height: 600px;
-    background-color: gray;
+    background-color: #032a31;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -68,28 +68,28 @@ body{
 #red{
     height: 265px;
     width: 265px;
-    box-shadow: white 0 0 20px 0;
+    box-shadow: rgb(255, 99, 99) 0 0 20px 0;
     transition: 0.75s;
     opacity: 2;  
 }
 #blue{
     height: 265px;
     width: 265px;
-    box-shadow: white 0 0 20px 0;  
+    box-shadow: rgb(108, 243, 250) 0 0 20px 0;  
     transition: 0.75s;
     opacity: 2;  
 }
 #green{
     height: 265px;
     width: 265px;
-    box-shadow: white 0 0 20px 0;  
+    box-shadow: rgb(116, 253, 103) 0 0 20px 0;  
     transition: 0.75s;
     opacity: 2;  
 }
 #yellow{
     height: 265px;
     width: 265px;
-    box-shadow: white 0 0 20px 0;  
+    box-shadow: rgb(238, 252, 113) 0 0 20px 0;  
     transition: 0.75s;
     opacity: 2;  
 }
