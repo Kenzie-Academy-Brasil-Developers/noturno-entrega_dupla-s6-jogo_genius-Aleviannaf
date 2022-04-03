@@ -36,7 +36,9 @@ function mensagemDeErro(){
     const mensagemErrou= document.createElement('span');
     mensagemErrou.classList.add('mensagemAcertou');
     mensagemErrou.innerText= "Errou, my bad!";
-    chamarFuncaoStart.appendChild(mensagemErrou); 
+
+    chamarFuncaoStart.appendChild(mensagemErrou);
+    
     
     setTimeout(() => { chamarFuncaoStart.removeChild(mensagemErrou); }, 2000);
     delay+=1000;
@@ -47,11 +49,18 @@ function mensagemDeErro(){
 
 function mensagemDeScore(){
     const mensagemErrou= document.createElement('span');
+    const button= document.createElement('button');
     mensagemErrou.classList.add('mensagemScore');
     mensagemErrou.innerText= `Score \n Total de rodadas: ${armazenaJogadaEmNumber.length} \n Sua Pontuação: ${armazenaJogadaEmNumber.length -1}`;
+    button.classList.add('btnReiniciar');
+    button.innerText = "Reinicar";
+
     chamarFuncaoStart.appendChild(mensagemErrou); 
-     
+    chamarFuncaoStart.appendChild(button);    
 }
+
+
+
 
 function mensagemParabens(){
     const mensagemdeParabens= document.createElement('span');
@@ -60,6 +69,8 @@ function mensagemParabens(){
     chamarFuncaoStart.appendChild(mensagemdeParabens);
      
 }
+
+
 
 
 
