@@ -65,7 +65,7 @@ function deNumeroParaCor(arr){
 }
 
 ///// função para identificar se ja pode ser feita a atualização
-let timerJogada = 4000;
+let timerJogada = 5000;
 
 function identificaFimDaSequenciaDoJogador(){    
 
@@ -73,5 +73,5 @@ function identificaFimDaSequenciaDoJogador(){
 
         comparaJogadas(armazenaJogadaEmNumber,jogadaSalva)
     },timerJogada);
-    timerJogada += 1500;
+    timerJogada += 2000;
 }

@@ -152,7 +152,7 @@ body{
 }
 
 /*Botão reiniciar*/
-button{
+.btnReiniciar{
     background-color: aqua;
     font-family: 'Palette Mosaic', cursive;
     font-family: 'Smokum', cursive;
