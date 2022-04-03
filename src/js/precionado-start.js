@@ -8,6 +8,8 @@ function mensagemIniciou(){
     spanMensagemInciou.innerText= "Inciou!";
     chamarFuncaoStart.appendChild(spanMensagemInciou);
 
+    setTimeout(() => { chamarFuncaoStart.removeChild(spanMensagemInciou); }, 2000);
+
     jogadaDaMaquina();
 }
 
