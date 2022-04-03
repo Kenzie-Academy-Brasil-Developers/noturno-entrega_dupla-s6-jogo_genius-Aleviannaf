@@ -153,14 +153,21 @@ body{
 
 /*Botão reiniciar*/
 .btnReiniciar{
+    width: 100px;
+    height: 45.5px;
     background-color: aqua;
     font-family: 'Palette Mosaic', cursive;
     font-family: 'Smokum', cursive;
     font-style: bold;
-    font-size: 12px;
-    margin-top: 15px;
+    font-size: 30px;
+    margin-top: 33px;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
+    border: none;
 
+}
+.btnReiniciar:hover{
+    color: azure;
+    background-color: #032a31;
 }
