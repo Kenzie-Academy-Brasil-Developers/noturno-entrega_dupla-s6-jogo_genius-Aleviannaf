@@ -27,6 +27,10 @@ function comparaJogadas(arr1,arr2){
     let stringArr1 = jogoMaquina.toString();
     let stringArr2 = arr2.toString();
 
+    if(armazenaJogadaEmNumber.length>=20){
+        mensagemParabens();
+    }else{
+
     if(stringArr1 === stringArr2){
         
         console.log("acertou");
@@ -36,6 +40,7 @@ function comparaJogadas(arr1,arr2){
     }
     limpaArray(jogadaSalva);
     limpaArray(jogoMaquina);
+    }
 }
 
 

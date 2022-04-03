@@ -50,9 +50,18 @@ function mensagemDeScore(){
     mensagemErrou.classList.add('mensagemScore');
     mensagemErrou.innerText= `Score \n Total de rodadas: ${armazenaJogadaEmNumber.length} \n Sua Pontuação: ${armazenaJogadaEmNumber.length -1}`;
     chamarFuncaoStart.appendChild(mensagemErrou); 
-    
-    
+     
 }
+
+function mensagemParabens(){
+    const mensagemdeParabens= document.createElement('span');
+    mensagemdeParabens.classList.add('mensagemScore');
+    mensagemdeParabens.innerText= `Parabéns você zerou o Jogo \n Sua Pontuação: ${armazenaJogadaEmNumber.length}`;
+    chamarFuncaoStart.appendChild(mensagemdeParabens);
+     
+}
+
+
 
 
 
