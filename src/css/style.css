@@ -1,0 +1,173 @@
+body{
+    background-image: url('../img/papel.jpg');
+    background-size: 100%;
+    
+}
+.jogo{
+    width: 600px;
+    height: 600px;
+    background-color: #032a31;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    border-radius: 50px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border: solid rgb(40, 93, 109);
+    cursor: pointer;
+}
+.box{
+    
+    height: 250px;
+    width: 250px;
+
+}
+.red{
+    background-color: red;
+    border-radius: 100px 9px 9px 9px;
+    opacity: 0.9;
+    transition: 0.75s;
+}
+.blue{
+    background-color: blue;
+    border-radius: 9px 100px 9px 9px;
+    opacity: 0.9;
+    transition: 0.75s;
+
+}
+.green{
+    background-color: green;
+    border-radius: 9px 9px 9px 100px;
+    opacity: 0.9;
+    transition: 0.75s;
+
+}
+.yellow{
+    background-color: yellow;
+    border-radius: 9px 9px 100px 9px;
+    opacity: 0.9;
+    transition: 0.75s;
+
+}
+.infos{
+    top: 170px;
+    left: 170px;
+    position: absolute;
+    background-color: antiquewhite;
+    border-radius: 100px;
+    background-image: url('../img/backMario2.png');
+    background-size: 300px;
+    border: solid gray;
+}
+
+/*Botões brilhando*/
+
+#red{
+    height: 265px;
+    width: 265px;
+    box-shadow: rgb(255, 99, 99) 0 0 20px 0;
+    transition: 0.75s;
+    opacity: 2;  
+}
+#blue{
+    height: 265px;
+    width: 265px;
+    box-shadow: rgb(108, 243, 250) 0 0 20px 0;  
+    transition: 0.75s;
+    opacity: 2;  
+}
+#green{
+    height: 265px;
+    width: 265px;
+    box-shadow: rgb(116, 253, 103) 0 0 20px 0;  
+    transition: 0.75s;
+    opacity: 2;  
+}
+#yellow{
+    height: 265px;
+    width: 265px;
+    box-shadow: rgb(238, 252, 113) 0 0 20px 0;  
+    transition: 0.75s;
+    opacity: 2;  
+}
+
+/*BOTÃO DE START*/
+.infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.startNoGame{
+    font-family: 'Palette Mosaic', cursive;
+    font-family: 'Smokum', cursive;
+    font-style: bold;
+    font-size: 50px;
+}
+#esconderStart{
+    display: none;
+}
+
+.welcomeNoGame{
+    font-family: 'Palette Mosaic', cursive;
+    font-family: 'Smokum', cursive;
+    font-style: bold;
+    font-size: 40px;
+    text-align:center;
+}
+
+.iniciandoJogo{
+    font-family: 'Palette Mosaic', cursive;
+    font-family: 'Smokum', cursive;
+    font-style: bold;
+    font-size: 40px;
+    text-align:center;
+}
+
+.mensagemIniciou{
+    font-family: 'Palette Mosaic', cursive;
+    font-family: 'Smokum', cursive;
+    font-style: bold;
+    font-size: 50px;
+    text-align:center;
+}
+
+.mensagemAcertou{
+    font-family: 'Palette Mosaic', cursive;
+    font-family: 'Smokum', cursive;
+    font-style: bold;
+    font-size: 50px;
+    text-align:center;
+}
+
+.mensagemScore{
+    font-family: 'Palette Mosaic', cursive;
+    font-family: 'Smokum', cursive;
+    font-style: bold;
+    font-size: 30px;
+    text-align:center;
+}
+
+/*Botão reiniciar*/
+.btnReiniciar{
+    width: 100px;
+    height: 45.5px;
+    background-color: aqua;
+    font-family: 'Palette Mosaic', cursive;
+    font-family: 'Smokum', cursive;
+    font-style: bold;
+    font-size: 30px;
+    margin-top: 33px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+
+}
+.btnReiniciar:hover{
+    color: azure;
+    background-color: #032a31;
+}
