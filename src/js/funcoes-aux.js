@@ -73,5 +73,5 @@ function identificaFimDaSequenciaDoJogador(){
 
         comparaJogadas(armazenaJogadaEmNumber,jogadaSalva)
     },timerJogada);
-    timerJogada += 1250;
+    timerJogada += 1350;
 }
