@@ -1,5 +1,19 @@
 const chamarFuncaoStart = document.querySelector('.infos');
 
+//mensagem de jogue!
+function mensagemJogue(){
+    const spanMensagemInciou = document.createElement('span');
+    spanMensagemInciou.classList.add('mensagemIniciou');
+    spanMensagemInciou.innerText= "Sua vez!!";
+    chamarFuncaoStart.appendChild(spanMensagemInciou);
+
+    setTimeout(() => { chamarFuncaoStart.removeChild(spanMensagemInciou); }, 1500);
+    
+    const botaoCorClicada = document.querySelector('.jogo');
+    botaoCorClicada.addEventListener('click',corClicada);
+    //identificaFimDaSequenciaDoJogador()
+}
+
 //tela iniciou o jogo
 
 function mensagemIniciou(){
@@ -16,7 +30,7 @@ function mensagemIniciou(){
 
 
 //tela de startando jogo
-
+ 
 function iniciandoJogo() {
     let delay =1000;
     const spanInciando = document.createElement('span');
