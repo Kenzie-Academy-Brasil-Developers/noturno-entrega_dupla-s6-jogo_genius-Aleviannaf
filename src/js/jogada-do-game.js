@@ -6,9 +6,10 @@ function jogadaDaMaquina(){
     let geraNumRandomArray = corRandomica();
     let chamandoFuncComParametro = sequenciaDeCores(geraNumRandomArray);
 
-    const botaoCorClicada = document.querySelector('.jogo');
-    botaoCorClicada.addEventListener('click',corClicada);
 
+    //setTimeout(function(){
+    //    mensagemJogue();
+    //},2500)
     identificaFimDaSequenciaDoJogador();
 }
 
@@ -45,6 +46,7 @@ function acendendoCoresMaquina(num){
 function sequenciaDeCores(arr){
     
     let delay = 400;
+    let delay2 = 1200;
     
     for(let i = 0; i < arr.length; i++){
 
@@ -56,5 +58,10 @@ function sequenciaDeCores(arr){
         },delay); 
         
         delay += 800;        
+        delay2 += 800;        
     }
+    setTimeout(function(){
+        mensagemJogue();
+    },delay2)
+    
 }
